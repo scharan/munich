@@ -20,7 +20,7 @@
 
       <!-- Start: Sai Charan's customizations -->
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-      <script type="text/javascript" src="https://raw.github.com/scharan/Goodies/master/customize-disqus.js"> </script>
+      <script type="text/javascript" src="https://raw.github.com/scharan/munich/master/customize-disqus.js"> </script>
       <!-- End: Sai Charan's customizations -->
 
       <style type="text/css">
