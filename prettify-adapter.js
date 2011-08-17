@@ -18,8 +18,8 @@ $(document).ready(function() {
                                  return lang.push( $(this).attr('class').match( brush ) );
                              }),
             function( i, cls ){
-                alert( $(cls).attr('class') + " ~ " + lang.peek() );
-                $(cls).attr( 'class', "prettyprint lang-"+lang.pop()[1] );
+                alert( $(cls).attr( 'class', "prettyprint lang-"+lang.pop()[1] ) );
+                //$(cls).attr( 'class', "prettyprint lang-"+lang.pop()[1] );
             });
 
     //Now prettyprint.
