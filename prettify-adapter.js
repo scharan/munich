@@ -18,6 +18,7 @@ $(document).ready(function() {
         return lang = $(this).attr('class').match( brush );
     }),
             function( i, cls ){
+                alert( lang[0] + "---" + lang[1] );
                 $(cls).attr('class', "prettyprint lang-"+lang[1]);
             });
 
