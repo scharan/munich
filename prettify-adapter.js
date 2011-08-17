@@ -15,9 +15,10 @@ $(document).ready(function() {
     var lang = [];
     // First, fix the PRE-brushes.
     $.each( $("pre").filter( function() {
-        return lang.push( $(this).attr('class').match( brush ) );;
-    }),
+                                 return lang.push( $(this).attr('class').match( brush ) );
+                             }),
             function( i, cls ){
+                alert( $(cls).attr('class') + " ~ " + lang.peek() );
                 $(cls).attr( 'class', "prettyprint lang-"+lang.pop()[1] );
             });
 
