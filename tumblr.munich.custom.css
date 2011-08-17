@@ -123,3 +123,18 @@ ul#nav {
 #dsq-subscribe {
     visibility: hidden;
 }
+
+span.meta .note {
+    top: 66px !important;
+}
+
+code {
+    font-size: 11px;
+}
+
+pre.prettyprint {
+    overflow: auto;
+    background-color: white;
+    margin: 0 0 0 0;
+    font-size: 11px;
+}
