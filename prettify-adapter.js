@@ -13,13 +13,13 @@
 $(document).ready(function() {
     var brush = /^brush:\s+(.*)/;
 
-    $.each( $("pre").filter( function() {
-        return $(this).attr('class').match( /^prettyprint/ );
-    }),
-            function( i, cls ){
-                alert( $(cls).attr('class') );
-                $(cls).attr( 'class', "noprettyprint");
-            });
+    // $.each( $("pre").filter( function() {
+    //     return $(this).attr('class').match( /^prettyprint/ );
+    // }),
+    //         function( i, cls ){
+    //             alert( $(cls).attr('class') );
+    //             $(cls).attr( 'class', "noprettyprint");
+    //         });
 
     // First, fix the PRE-brushes.
     $.each( $("pre").filter( function() {
