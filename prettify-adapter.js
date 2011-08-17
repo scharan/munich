@@ -21,6 +21,14 @@ $(document).ready(function() {
                 $(cls).attr( 'class', "prettyprint lang-"+ $(cls).attr('class').match( brush )[1] );
             });
 
+    $.each( $("pre").filter( function() {
+        return $(this).attr('class').match( /^prettyprint/ );
+    }),
+            function( i, cls ){
+                    //alert( $(cls).attr('class').match( brush )[1] );
+                $(cls).attr( 'class', "noprettyprint");
+            });
+
     //Now prettyprint.
     prettyPrint();
 });
