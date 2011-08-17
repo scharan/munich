@@ -9,17 +9,11 @@
 // 
 // Aims to:
 // 1. Transform <pre class="brush: cpp"> into <pre class="prettyprint lang-cpp">
+// TODO:
+// 1. Should be able to do the pattern matching just once and cache the matched result.
 
 $(document).ready(function() {
     var brush = /^brush:\s+(.*)/;
-
-    // $.each( $("pre").filter( function() {
-    //     return $(this).attr('class').match( /^prettyprint/ );
-    // }),
-    //         function( i, cls ){
-    //             alert( $(cls).attr('class') );
-    //             $(cls).attr( 'class', "noprettyprint");
-    //         });
 
     // First, fix the PRE-brushes.
     $.each( $("pre").filter( function() {
