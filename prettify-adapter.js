@@ -11,5 +11,7 @@
 // 1. Transform <pre class="brush: cpp"> into <pre class="prettyprint lang-cpp">
 
 $(document).ready(function() {
-    alert( $("pre").attr("class") );
+    $.each( $("pre").attr("class"), function( cls ){
+        alert(cls);
+    });
 });
