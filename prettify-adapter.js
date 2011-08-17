@@ -12,16 +12,15 @@
 
 $(document).ready(function() {
     var brush = /^brush:\s+(.*)/;
-    var lang = [];
+
     // First, fix the PRE-brushes.
     $.each( $("pre").filter( function() {
-                                 return lang.push( $(this).attr('class').match( brush ) );
+                                 return $(this).attr('class').match( brush );
                              }),
             function( i, cls ){
-                alert( $(cls).attr( 'class') + " ~ " + lang.pop()[1] );
-                //$(cls).attr( 'class', "prettyprint lang-"+lang.pop()[1] );
+                $(cls).attr( 'class', "prettyprint lang-"+ $(cls).attr('class').match( brush )[1] );
             });
 
     //Now prettyprint.
-    //prettyPrint();
+    prettyPrint();
 });
