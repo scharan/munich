@@ -13,20 +13,20 @@
 $(document).ready(function() {
     var brush = /^brush:\s+(.*)/;
 
-    // First, fix the PRE-brushes.
-    $.each( $("pre").filter( function() {
-                                 return $(this).attr('class').match( brush );
-                             }),
-            function( i, cls ){
-                $(cls).attr( 'class', "prettyprint lang-"+ $(cls).attr('class').match( brush )[1] );
-            });
-
     $.each( $("pre").filter( function() {
         return $(this).attr('class').match( /^prettyprint/ );
     }),
             function( i, cls ){
                     //alert( $(cls).attr('class').match( brush )[1] );
                 $(cls).attr( 'class', "noprettyprint");
+            });
+
+    // First, fix the PRE-brushes.
+    $.each( $("pre").filter( function() {
+                                 return $(this).attr('class').match( brush );
+                             }),
+            function( i, cls ){
+                $(cls).attr( 'class', "prettyprint lang-"+ $(cls).attr('class').match( brush )[1] );
             });
 
     //Now prettyprint.
