@@ -11,15 +11,14 @@
 // 1. Transform <pre class="brush: cpp"> into <pre class="prettyprint lang-cpp">
 
 $(document).ready(function() {
-    var brush = /^brush:\s*(.*)/;
-    var lang;
+    var brush = /^brush:[\s]+(.*)/;
+    var lang = [];
     // First, fix the PRE-brushes.
     $.each( $("pre").filter( function() {
-        return lang = $(this).attr('class').match( brush );
+        return lang.push( $(this).attr('class').match( brush ) );;
     }),
             function( i, cls ){
-                alert( lang[0] + "---" + lang[1] );
-                $(cls).attr('class', "prettyprint lang-"+lang[1]);
+                $(cls).attr( 'class', "prettyprint lang-"+lang.pop()[1] );
             });
 
     //Now prettyprint.
