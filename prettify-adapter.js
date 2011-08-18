@@ -21,10 +21,10 @@ $(document).ready(function() {
                                  return $(this).attr('class').match( brush );
                              }),
             function( i, cls ){
-                alert( $(cls).attr('class') + " ~ " + $(cls).attr('class').match( brush )[1] );
+                //alert( $(cls).attr('class') + " ~ " + $(cls).attr('class').match( brush )[1] );
                 $(cls).attr( 'class', "prettyprint lang-"+ $(cls).attr('class').match( brush )[1] );
             });
 
     //Now prettyprint.
-    prettyPrint();
+    //prettyPrint();
 });
