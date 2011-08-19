@@ -756,7 +756,8 @@
             <br class="clear">
               
               <div id="bottom">
-                <!-- Please do not remove the credit attribution here. Feel free to modify the rest of theme as you wish, however. --><b>Design</b> crafted by <a href="http://www.prshnth.com">Prashanth Kamalakanthan</a>. {lang:Powered by Tumblr 2}.
+                <!-- Please do not remove the credit attribution here. Feel free to modify the rest of theme as you wish, however. --><b>Design</b> crafted by <a href="http://www.prshnth.com">Prashanth Kamalakanthan</a>. {lang:Powered by Tumblr 2}. <br />
+                Adapted by <a href="/about"><b>Sai Charan</b></a>. Customized theme available on <a href="https://github.com/scharan/munich" target="_blank"><b>Github</b></a>. 
               </div>
 
             </div>
