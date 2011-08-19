@@ -65,6 +65,10 @@ ul#nav {
     color: #FFBC00;
 }
 
+#bottom {
+    margin: 0 0 0 0;
+}
+
 p img {
     padding: 10px;
     border: true;
