@@ -14,7 +14,7 @@
 // 1. Should be able to do the pattern matching just once and cache the matched result.
 
 $(document).ready(function() {
-    var brush = /^brush:\s+(.*)/;
+    var brush = /^brush:\s*(.*)/;
 
     // First, fix the PRE-brushes.
     $.each( $("pre").filter( function() {
