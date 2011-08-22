@@ -18,7 +18,11 @@ $(document).ready(function() {
 
     // First, fix the PRE-brushes.
     $.each( $("pre").filter( function() {
-                                 return $(this).attr('class').match( brush );
+                                 try {
+                                     return $(this).attr('class').match( brush );
+                                 } catch(err) {
+                                   return 0;
+                                 }
                              }),
             function( i, cls ){
                 //alert( $(cls).attr('class') + " ~ " + $(cls).attr('class').match( brush )[1] );
