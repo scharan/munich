@@ -15,5 +15,6 @@ $(document).ready(function() {
     //alert($(location).attr('href').split('/').reverse());
     if( $.inArray($(location).attr('href').replace(/\/$/,"").split('/').reverse()[0], nodsq) >= 0 ) {
         $("#disqus_thread").hide();
+        $("span.meta").hide();
     }
 });
