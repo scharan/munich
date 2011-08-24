@@ -11,9 +11,9 @@
 // 1. Disable disqus on certain pages.
 
 $(document).ready(function() {
-    var nodsq = ["ask", "about"];
+    var nodsq = ["ask", "about", "about.html", "search.html", "search", "index.htm", "index.html", "archive", "archive.html"];
     //alert($(location).attr('href').split('/').reverse());
-    if( $.inArray($(location).attr('href').split('/').reverse()[0], nodsq) >= 0 ) {
+    if( $.inArray($(location).attr('href').replace(/\/$/,"").split('/').reverse()[0], nodsq) >= 0 ) {
         $("#disqus_thread").hide();
     }
 });
