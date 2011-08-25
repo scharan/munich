@@ -14,7 +14,7 @@ $(document).ready(function() {
     var nodsq = ["ask", "about", "about.html", "search.html", "search", "index.htm", "index.html", 
                  "archive", "archive.html", "tags", "tags.html"];
     //alert($(location).attr('href').split('/').reverse());
-    if( $.inArray($(location).attr('href').replace(/\/$/,"").split('/').reverse()[0], nodsq) >= 0 ) {
+    if( $.inArray($(location).attr('href').replace(/\/$/,"").split('/').reverse()[0], nodsq) >= 0  || $("#no-disqus").length > 0 ) {
         $("#disqus_thread").hide();
         $("span.meta").hide();
     }
